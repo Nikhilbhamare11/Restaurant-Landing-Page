@@ -101,9 +101,13 @@
             <a href="#home" class="backtotop">Back to Top</a>
         </div>
         <p class="footer">
-            Copyright &copy; 2024 www.foodiesrestaurant.com - All rights reserved
+            Copyright &copy;&#xA0<span id="currentYear"></span>&#xA0 www.foodiesrestaurant.com - All rights reserved
         </p>
     </footer>
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById("currentYear").textContent = currentYear;
+    </script>
 </body>
 
 </html>
